@@ -64,7 +64,7 @@ function renameFile(pathOldFile, pathNewFile) {
 */
 function checkIfFileIsThere(absolutePathOfFile) {
     try {
-        var randomFaggsWontMakeMeSick = FileUtil.read(absolutePathOfFile);
+        var file = FileUtil.read(absolutePathOfFile);
         logger.info("File was found at: " + absolutePathOfFile);
         return true;
     } catch (e) {
